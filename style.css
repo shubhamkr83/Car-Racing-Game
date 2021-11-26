@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shippori+Antique+B1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game_screen {
+    width: 100%;
+    height: 100vh;
+    background-image: url(bgimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.car,
+.enemy {
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    bottom: 120px;
+    border-radius: 1.2rem;
+    background-image: url(car.png);
+    background-repeat: no-repeat;
+    background-color: #da3333; 
+    background-size: 100% 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.lines {
+    width: 10px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    margin-left: 195px;
+} 
+
+ .game_area {
+    width: 400px;
+    height: 100vh;
+    background-color: #1a1919;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 7px dashed #c8d6e5;
+    border-left: 7px dashed #c8d6e5;
+}
+ 
+.score {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background-color: rgb(15, 196, 228);
+    width: 246px;
+    height: 62px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    border-radius: 28px;
+    background: linear-gradient(145deg, #d2ffff, #b0d7df);
+    box-shadow:  7px 7px 14px #a9ced5,
+             -7px -7px 14px #dfffff;
+    box-sizing: 0 5px 5px #777;
+}
+
+.first_screen {
+    position: absolute;
+    background-color: #127cdf;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1.6px;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #777;
+} 
